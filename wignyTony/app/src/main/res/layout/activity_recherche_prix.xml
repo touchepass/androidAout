@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="be.tony.troisiememain.activity.RecherchePrixActivity">
+
+    <TextView
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:id="@+id/prix_err"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text=""
+        android:layout_marginTop="10dp"
+        android:textSize="15dp"
+        android:gravity="center"
+        />
+
+    <TextView
+        app:layout_constraintTop_toBottomOf="@+id/prix_err"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/txt_nom_prix"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:text="Nom"
+        android:layout_marginTop="10dp"
+        />
+
+    <EditText
+        app:layout_constraintTop_toBottomOf="@+id/prix_err"
+        app:layout_constraintLeft_toRightOf="@+id/txt_nom_prix"
+        android:id="@+id/nom_prix"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        android:layout_marginLeft="150dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        />
+
+    <TextView
+        app:layout_constraintTop_toBottomOf="@+id/nom_prix"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/txt_min_prix"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:text="Prix minimum"
+        android:layout_marginTop="10dp"
+        />
+
+    <EditText
+        app:layout_constraintTop_toBottomOf="@+id/nom_prix"
+        app:layout_constraintLeft_toRightOf="@+id/txt_min_prix"
+        android:id="@+id/min_prix"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="150dp"
+        android:layout_marginRight="10dp"
+        />
+
+     <TextView
+         app:layout_constraintTop_toBottomOf="@+id/min_prix"
+         app:layout_constraintLeft_toLeftOf="parent"
+         android:layout_marginLeft="10dp"
+        android:id="@+id/txt_max_prix"
+         android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:text="Prix maximum"
+         android:layout_marginTop="10dp"
+         />
+
+    <EditText
+        app:layout_constraintTop_toBottomOf="@+id/min_prix"
+        app:layout_constraintLeft_toRightOf="@+id/txt_max_prix"
+        android:id="@+id/max_prix"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="150dp"
+        android:layout_marginRight="10dp"
+        />
+
+    <Button
+        app:layout_constraintTop_toBottomOf="@+id/max_prix"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:id="@+id/valider_prix"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Valider"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        />
+
+    <Button
+        app:layout_constraintTop_toBottomOf="@+id/max_prix"
+        app:layout_constraintRight_toRightOf="parent"
+        android:id="@+id/retour_prix"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Retour"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+
+        />
+
+
+</android.support.constraint.ConstraintLayout>

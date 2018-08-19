@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="be.tony.troisiememain.activity.RechercherVilleActivity">
+
+    <TextView
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:id="@+id/ville_err"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text=""
+        android:layout_marginTop="10dp"
+        android:textSize="15dp"
+        android:gravity="center"
+        />
+
+    <TextView
+        app:layout_constraintTop_toBottomOf="@+id/ville_err"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/txt_nom_ville"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:text="Nom article"
+        android:layout_marginTop="10dp"
+        />
+
+    <EditText
+        app:layout_constraintTop_toBottomOf="@+id/ville_err"
+        app:layout_constraintLeft_toRightOf="@+id/txt_nom_ville"
+        android:id="@+id/nom_ville"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        android:layout_marginLeft="160dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        />
+
+    <Button
+        app:layout_constraintTop_toBottomOf="@+id/nom_ville"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:id="@+id/recherche_ville_wizz"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:text="Filtrer ville"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        />
+
+    <EditText
+        app:layout_constraintTop_toBottomOf="@+id/nom_ville"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:id="@+id/txt_res_recherche"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        android:layout_marginLeft="160dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        />
+
+    <Button
+        app:layout_constraintTop_toBottomOf="@+id/txt_res_recherche"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:id="@+id/valider_ville"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Valider"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        />
+
+    <Button
+        app:layout_constraintTop_toBottomOf="@+id/txt_res_recherche"
+        app:layout_constraintRight_toRightOf="parent"
+        android:id="@+id/retour_ville"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Retour"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+
+        />
+
+</android.support.constraint.ConstraintLayout>
